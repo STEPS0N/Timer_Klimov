@@ -22,12 +22,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonStart"
+        android:id="@+id/button"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/button_radius"
         android:text="Начать"
+        android:onClick="OnStart"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,18 +37,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_timer" />
 
     <Button
-        android:id="@+id/buttonClear"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/button_radius"
         android:text="Сброс"
+        android:onClick="OnClear"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
